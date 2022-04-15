@@ -1,0 +1,72 @@
+INFO:root:Let the journey begin!
+INFO:root:Let the journey begin!
+INFO:root:Iteration:       10, ad_acc:   0.6094, cls_acc:   1.0000, mse_loss:  10.2778
+INFO:root:Let the journey begin!
+INFO:root:Iteration:       10, ad_acc:   0.5469, cls_acc:   1.0000, mse_loss:  18.6597
+INFO:root:Iteration:       20, ad_acc:   0.5000, cls_acc:   0.8750, mse_loss:  10.5567
+INFO:root:Iteration:       30, ad_acc:   0.5000, cls_acc:   0.8750, mse_loss:   4.5418
+INFO:root:Iteration:       40, ad_acc:   0.5156, cls_acc:   0.6875, mse_loss:   5.4505
+INFO:root:Iteration:       50, ad_acc:   0.5625, cls_acc:   0.8750, mse_loss:   3.4554
+INFO:root:Iteration:       60, ad_acc:   0.5156, cls_acc:   0.8125, mse_loss:   3.4188
+INFO:root:Iteration:       70, ad_acc:   0.6250, cls_acc:   0.7500, mse_loss:   2.5020
+INFO:root:Iteration:       80, ad_acc:   0.7344, cls_acc:   1.0000, mse_loss:  10.3743
+INFO:root:Iteration:       90, ad_acc:   0.6406, cls_acc:   0.8125, mse_loss:  12.7395
+INFO:root:Iteration:      100, ad_acc:   0.9062, cls_acc:   0.6875, mse_loss:   2.4860
+INFO:root:Let the journey begin!
+INFO:root:Iteration:       10, ad_acc:   0.5938, cls_acc:   0.3750, mse_loss:  27.6849
+INFO:root:Iteration:       20, ad_acc:   0.5156, cls_acc:   0.8125, mse_loss:  30.8075
+INFO:root:Iteration:       30, ad_acc:   0.5938, cls_acc:   0.6250, mse_loss:  12.5562
+INFO:root:Iteration:       40, ad_acc:   0.5156, cls_acc:   0.9375, mse_loss:   5.6471
+INFO:root:Iteration:       50, ad_acc:   0.5156, cls_acc:   0.6875, mse_loss:   5.2682
+INFO:root:Iteration:       60, ad_acc:   0.7656, cls_acc:   0.8750, mse_loss:   3.8865
+INFO:root:Iteration:       70, ad_acc:   0.5000, cls_acc:   0.8125, mse_loss:   2.7827
+INFO:root:Iteration:       80, ad_acc:   0.5781, cls_acc:   0.6875, mse_loss:   2.6469
+INFO:root:Iteration:       90, ad_acc:   0.6562, cls_acc:   0.8750, mse_loss:   2.7590
+INFO:root:Iteration:      100, ad_acc:   0.7969, cls_acc:   0.9375, mse_loss:   1.5641
+INFO:root:Iteration:      110, ad_acc:   0.8438, cls_acc:   0.8125, mse_loss:   2.3788
+INFO:root:Iteration:      120, ad_acc:   0.5938, cls_acc:   0.7500, mse_loss:   7.2567
+INFO:root:Iteration:      130, ad_acc:   0.9531, cls_acc:   0.8750, mse_loss:   2.0881
+INFO:root:Iteration:      140, ad_acc:   0.4531, cls_acc:   0.7500, mse_loss:  11.6680
+INFO:root:Iteration:      150, ad_acc:   0.9219, cls_acc:   0.8750, mse_loss:   1.6267
+INFO:root:Iteration:      160, ad_acc:   0.5781, cls_acc:   0.9375, mse_loss:   3.5540
+INFO:root:Iteration:      170, ad_acc:   0.6875, cls_acc:   0.8750, mse_loss:  12.1934
+INFO:root:Iteration:      180, ad_acc:   0.8750, cls_acc:   0.9375, mse_loss:   4.5779
+INFO:root:Iteration:      190, ad_acc:   0.8125, cls_acc:   0.8125, mse_loss:   1.2879
+INFO:root:Iteration:      200, ad_acc:   0.4531, cls_acc:   0.8750, mse_loss:  17.2179
+INFO:root:Iteration:      210, ad_acc:   0.8281, cls_acc:   0.8125, mse_loss:   1.8958
+INFO:root:Iteration:      220, ad_acc:   0.6719, cls_acc:   0.8750, mse_loss:   3.0740
+INFO:root:Iteration:      230, ad_acc:   0.9219, cls_acc:   0.7500, mse_loss:   0.5208
+INFO:root:Iteration:      240, ad_acc:   0.9531, cls_acc:   0.8125, mse_loss:   7.5825
+INFO:root:Iteration:      250, ad_acc:   0.4844, cls_acc:   0.9375, mse_loss:   4.3646
+INFO:root:Iteration:      260, ad_acc:   0.3906, cls_acc:   0.9375, mse_loss:   3.4836
+INFO:root:Iteration:      270, ad_acc:   0.5781, cls_acc:   0.8750, mse_loss:   3.7198
+INFO:root:Iteration:      280, ad_acc:   0.6562, cls_acc:   0.7500, mse_loss:   4.1627
+INFO:root:Iteration:      290, ad_acc:   0.6250, cls_acc:   0.9375, mse_loss:   5.3127
+INFO:root:Iteration:      300, ad_acc:   0.5000, cls_acc:   0.7500, mse_loss:   3.7873
+INFO:root:Iteration:      310, ad_acc:   0.4844, cls_acc:   0.8125, mse_loss:   1.0500
+INFO:root:Iteration:      320, ad_acc:   0.3750, cls_acc:   0.6875, mse_loss:   2.0209
+INFO:root:Iteration:      330, ad_acc:   0.7812, cls_acc:   0.6875, mse_loss:   0.8395
+INFO:root:Iteration:      340, ad_acc:   0.6250, cls_acc:   0.6875, mse_loss:   0.7291
+INFO:root:Iteration:      350, ad_acc:   0.5625, cls_acc:   0.7500, mse_loss:   0.9980
+INFO:root:Iteration:      360, ad_acc:   0.5000, cls_acc:   0.6875, mse_loss:   0.7072
+INFO:root:Iteration:      370, ad_acc:   0.3594, cls_acc:   0.8750, mse_loss:   0.3549
+INFO:root:Iteration:      380, ad_acc:   0.7969, cls_acc:   1.0000, mse_loss:   0.4466
+INFO:root:Iteration:      390, ad_acc:   0.5625, cls_acc:   0.8125, mse_loss:   0.6344
+INFO:root:Iteration:      400, ad_acc:   0.3750, cls_acc:   0.9375, mse_loss:   0.5344
+INFO:root:Iteration:      410, ad_acc:   0.7188, cls_acc:   0.8125, mse_loss:   0.4201
+INFO:root:Iteration:      420, ad_acc:   0.5312, cls_acc:   0.8125, mse_loss:   0.4493
+INFO:root:Iteration:      430, ad_acc:   0.8594, cls_acc:   0.7500, mse_loss:   0.6269
+INFO:root:Iteration:      440, ad_acc:   0.4688, cls_acc:   0.8125, mse_loss:   0.5126
+INFO:root:Iteration:      450, ad_acc:   0.9219, cls_acc:   0.8750, mse_loss:   0.2333
+INFO:root:Iteration:      460, ad_acc:   0.6094, cls_acc:   0.8750, mse_loss:   0.3687
+INFO:root:Iteration:      470, ad_acc:   0.7656, cls_acc:   0.8750, mse_loss:   1.3231
+INFO:root:Iteration:      480, ad_acc:   0.7500, cls_acc:   0.9375, mse_loss:   0.6016
+INFO:root:Iteration:      490, ad_acc:   0.3281, cls_acc:   0.7500, mse_loss:   0.1461
+INFO:root:Iteration:      500, ad_acc:   0.9219, cls_acc:   0.8125, mse_loss:   0.3573
+INFO:root:Let the journey begin!
+INFO:root:Let the journey begin!
+INFO:root:Let the journey begin!
+INFO:root:Let the journey begin!
+INFO:root:Let the journey begin!
+INFO:root:Let the journey begin!
+INFO:root:Let the journey begin!
