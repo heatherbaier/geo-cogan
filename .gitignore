@@ -4,3 +4,4 @@ tan_imagery/
 .ipynb_checkpoints/
 __pycache__/
 
+creds.txt

@@ -1,0 +1,10 @@
+Epoch: 0
+Average Discriminator Accuracy: 0.4798
+Average Loss: 101.2838
+Average Class Accuracy: 0.8085
+
+Epoch: 1
+Average Discriminator Accuracy: 0.4307
+Average Loss: 84.935
+Average Class Accuracy: 0.8103
+

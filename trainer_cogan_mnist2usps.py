@@ -10,6 +10,7 @@ class MNIST2USPSCoGanTrainer(object):
     
     def __init__(self, batch_size=64, latent_dims=100):
         super(MNIST2USPSCoGanTrainer, self).__init__()
+        
         self.dis = CoDis28x28()
         self.gen = CoGen28x28(latent_dims)
         self.dis_opt = torch.optim.Adam(self.dis.parameters(), lr=0.0002, betas=(0.5, 0.999), weight_decay=0.0005)
@@ -30,15 +31,26 @@ class MNIST2USPSCoGanTrainer(object):
         
         self.dis.zero_grad()
         
+        ################################################################################################
         # Adversarial part for true images
-        # I THINK THIS MUST BE THE STANDARD FORWARD PASS
+        # THIS IS THE STANDARD FORWARD PASS AND PREDICTS WHETHER THE **TRUE** IMAGES ARE TRUE OR FAKE
+        ################################################################################################
         true_outputs, true_feat_a, true_feat_b = self.dis(images_a, images_b)
+
+        # true_outputs = two element binary classification vectors for batch_size * 2. ie., [32, 2]
+        # true_feat_a = [batch_size, 500, 1, ] assusiming final feature layer for dataset a
+        # true_feat_a = [batch_size, 500, 1, ] assusiming final feature layer for dataset b
+        print(true_outputs.shape, true_feat_a.shape, true_feat_b.shape)
                 
         true_loss = nn.functional.cross_entropy(true_outputs, self.true_labels)
         _, true_predicts = torch.max(true_outputs.data, 1)
         true_acc = (true_predicts == 1).sum()/(1.0*true_predicts.size(0))
-
+        
+        
+        ################################################################################################
         # Adversarial part for fake images
+        # THIS IS THE STANDARD FORWARD PASS AND PREDICTS WHETHER THE **FAKE** IMAGES ARE TRUE OR FAKE
+        ################################################################################################
         fake_images_a, fake_images_b = self.gen(noise)
         fake_outputs, fake_feat_a, fake_feat_b = self.dis(fake_images_a, fake_images_b)
         fake_loss = nn.functional.cross_entropy(fake_outputs, self.fake_labels)
@@ -49,8 +61,12 @@ class MNIST2USPSCoGanTrainer(object):
             torch.zeros(fake_feat_a.size(0), fake_feat_a.size(1), fake_feat_a.size(2), fake_feat_a.size(3))).cuda()
         mse_loss = self.mse_loss_criterion(fake_feat_a - fake_feat_b, dummy_tensor) * fake_feat_a.size(
             1) * fake_feat_a.size(2) * fake_feat_a.size(3)
-
+        
+        
+        ################################################################################################
         # Classification loss
+        # THIS ACTUALLY PREDICTS THE PASS/FAIL CLASS OF AN IMAGE
+        ################################################################################################
         cls_outputs = self.dis.classify_a(images_a)
         cls_loss = nn.functional.cross_entropy(cls_outputs, labels_a)
         _, cls_predicts = torch.max(cls_outputs.data, 1)

@@ -1,6 +1,8 @@
 from torchvision import transforms
 import torch.utils.data as data
+from PIL import Image
 import pandas as pd
+import numpy as np
 import torch
 import cv2
 import os
@@ -17,11 +19,13 @@ class TAN_DATASET(data.Dataset):
         self.indices = indices
         self.df = pd.read_csv(df_path)
         self.batch_size = batch_size
+        self.im_size = (64, 64)
         self.data = self.load_samples()
         
     def __getitem__(self, index):
-        batch = self.data[index]
-        batch_imagery, batch_labels = to_tensor(cv2.imread(batch[0])), torch.tensor(batch[1]).unsqueeze(0)
+        batch = self.data[index]        
+        batch_imagery = Image.open(batch[0]).convert("RGB")
+        batch_imagery, batch_labels = to_tensor(np.array(batch_imagery.resize(self.im_size, Image.ANTIALIAS))), torch.tensor(batch[1]).unsqueeze(0)
         return batch_imagery, batch_labels
 
     def __len__(self):
@@ -51,11 +55,13 @@ class MEX_DATASET(data.Dataset):
         self.indices = indices
         self.df = pd.read_csv(df_path)
         self.batch_size = batch_size
+        self.im_size = (64, 64)
         self.data = self.load_samples()
         
     def __getitem__(self, index):
         batch = self.data[index]        
-        batch_imagery, batch_labels = to_tensor(cv2.imread(batch[0])), torch.tensor(batch[1]).unsqueeze(0)
+        batch_imagery = Image.open(batch[0]).convert("RGB")
+        batch_imagery, batch_labels = to_tensor(np.array(batch_imagery.resize(self.im_size, Image.ANTIALIAS))), torch.tensor(batch[1]).unsqueeze(0)
         return batch_imagery, batch_labels
 
     def __len__(self):
